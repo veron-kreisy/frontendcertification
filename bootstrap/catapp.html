@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <style>
   
   h2 {
@@ -15,12 +16,21 @@
 
 </style>
 
-<h2 class="text-primary text-center">CatPhotoApp</h2>
-<!--  making images mobile resposive -->
-<img  class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="codecamp">
+<!-- Create a Custom Heading -->
+<div class="row">
+  <div class="col-xs-8">
+    <h2 class="text-primary text-center">CatPhotoApp</h2>
+  </div>
+  <div class="col-xs-4">
+    <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+  </div>
+</div>
+<!-- font awesome with bootstrap -->
+
+
 <div class="row">
     <div class="col-xs-4">
-<button class="btn btn-primary btn-block">Like</button>
+<button class="btn btn-primary btn-block"> <i class="fas fa-thumbs-up">Like</i></button>
 </div><div class="col-xs-4">
 <button class="btn btn-info btn-block">Info</button>
 <!-- warn danger when performing a destructive action -->
@@ -37,8 +47,8 @@
 
 <!-- styling with bootstrap css -->
 
-
-<p>Things cats love:</p>
+<!-- span is used to inline elements -->
+<p>Things cats<span class="text-danger">love:</span> </p>
 <ul>
   <li>cat nip</li>
   <li>laser pointers</li>
@@ -59,3 +69,4 @@
   <input type="text" placeholder="cat photo URL" required>
   <button type="submit">Submit</button>
 </form>
+
