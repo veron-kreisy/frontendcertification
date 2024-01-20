@@ -61,7 +61,7 @@
   <li>other cats</li>
 </ol>
 <!-- Responsively Style Radio Buttons-->
-<form action="https://freecatphotoapp.com/submit-cat-photo">
+<form action="https://freecatphotoapp.com/submit-cat-photo" >
   <div class="row">
     <div class="col-xs-6">>
   <label><input type="radio" name="indoor-outdoor"> Indoor</label>
@@ -82,8 +82,15 @@
   <label><input type="checkbox" name="personality"> Crazy</label>
   </div>
 </div>
-
-  <input type="text" placeholder="cat photo URL" required>
-  <button type="submit">Submit</button>
+<!-- Style Text Inputs as Form Controls -->
+<div class="row">
+  <div class="col-xs-7"> 
+  <input type="text" class="form-control" placeholder="cat photo URL" required>
+  </div>
+  <div class="col-xs-5"> 
+  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane">Submit</i></button>
+  </div>
+</div>
 </form>
+
 
