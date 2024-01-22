@@ -5,9 +5,25 @@
         // select the item using the sign then add some css classes using the dot notation
         // to target divs use the well element then(add class)
         $("well").addClass("animated shake");
-        // always add the dot before targeting an element
-        // you can also target elements with their ids
+        // always add the dot before targeting an element to add class
+        // you can also target elements with their ids by using the #before the id's name
+        $("#target3").addClass("animated fadeOut");
+        // targeting is either class,id,or type
+        $("button").addClass("animated ");
+        $(".btn").addClass("shake");
+        $("#target1").addClass("btn-primary");
+        // removing classes from elements
+        $("button").removeClass("btn-default");
+        // using jquery to change css properties
+        $("#target1").css("color", "red");
+        // disable elements using prop() function
+        $("#target1").prop("disabled", true);
+
+
+
         
+
+
     });
 </script>
 
