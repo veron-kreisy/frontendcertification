@@ -25,6 +25,27 @@
         $("#target4").remove();
         // moving elements from one function to another using append to
         $("#target2").appendTo("#right-well");
+        // copy to another function using clone and append to the other function
+        // function chaining is sticking two jquery functions together
+        $("#target5").clone().appendTo("#left-well");
+        // inheritance in jquery(parent)
+        $("#target1").parent().css("background-color", "red");
+// children of an element
+$("#right-well").children().css("color", "orange");
+// Target a Specific Child of an Element Using jQuery
+$(".target:nth-child(2)").addClass("animated bounce");
+// Target Even Elements Using jQuery
+
+$(".target:even").addClass("animated shake");
+// Use jQuery to Modify the Entire Page
+$("body").addClass("animated hinge");
+
+
+
+
+
+
+
 
 
 
