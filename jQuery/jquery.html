@@ -1,0 +1,111 @@
+<script>
+    $(document).ready(function() {
+        // all jquery functions start with the dollar sign
+        $("button").addClass("animated bounce"); 
+        // select the item using the sign then add some css classes using the dot notation
+        // to target divs use the well element then(add class)
+        $("well").addClass("animated shake");
+        // always add the dot before targeting an element
+        // you can also target elements with their ids
+        
+    });
+</script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+  
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<!-- Create a Custom Heading -->
+<div class="row">
+  <div class="col-xs-8">
+    <h2 class="text-primary text-center">CatPhotoApp</h2>
+  </div>
+  <div class="col-xs-4">
+    <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+  </div>
+</div>
+<!-- font awesome with bootstrap -->
+
+
+<div class="row">
+    <div class="col-xs-4">
+<button class="btn btn-primary btn-block"> <i class="fas fa-thumbs-up">Like</i></button>
+</div><div class="col-xs-4">
+<button class="btn btn-info btn-block"><i class="fas fa-info-circle">Info</i></button>
+<!-- warn danger when performing a destructive action -->
+</div><div class="col-xs-4">
+<button class="btn btn-danger btn-block"><i class="fas fa-trash">Delete</i></button>
+<!-- putting elements side by side -->
+</div>
+</div>
+
+
+
+
+<a href="#"><img class=" img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+<!-- styling with bootstrap css -->
+
+<!-- span is used to inline elements -->
+<p>Things cats<span class="text-danger">love:</span> </p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+<!-- Responsively Style Radio Buttons-->
+<form action="https://freecatphotoapp.com/submit-cat-photo" >
+  <div class="row">
+    <div class="col-xs-6">
+  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+</div>
+  <div class="col-xs-6">
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  </div>
+</div>
+<!--Responsively Style Checkboxes -->
+<div class="row">
+  <div class="col-xs-4">
+  <label><input type="checkbox" name="personality"> Loving</label>
+  </div>
+  <div class="col-xs-4">
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  </div>
+  <div class="col-xs-4">
+  <label><input type="checkbox" name="personality"> Crazy</label>
+  </div>
+</div>
+<!-- Style Text Inputs as Form Controls -->
+<div class="row">
+  <div class="col-xs-7"> 
+  <input type="text" class="form-control" placeholder="cat photo URL" required/>
+  </div>
+  <div class="col-xs-5"> 
+  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane">Submit</i></button>
+  </div>
+</div>
+
+</form>
+
+
