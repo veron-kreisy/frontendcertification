@@ -14,8 +14,29 @@
 Mixins are like functions for CSS
 The definition starts with @mixin followed by a custom name. The parameters (the $x, $y, $blur, and $c  */
 /* A mixin is called with the @include directive: */
- 
+ @mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
 
+#awesome {
+  @include border-radius(15px);
+}
+
+@mixin border-stroke($val) {
+  @if $val == solid {
+    border: 1px solid #000;
+  } @else if $val == dashed {
+    border: 2px dashed #333;
+  } @else if $val == dotted {
+    border: 1px dotted #555;
+  } @else {
+    // Default condition
+    border: 1px solid #000;
+  }
+}
 
 
 
