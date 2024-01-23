@@ -1,0 +1,11 @@
+@import 'variables';
+.info {
+    /* Styles for the base .info class */
+    color: #333;
+    padding: 10px;
+  }
+  
+  .info-important {
+    @extend .info;
+    background-color: magenta;
+  }
