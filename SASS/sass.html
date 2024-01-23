@@ -39,11 +39,14 @@ The definition starts with @mixin followed by a custom name. The parameters (the
 }
 $colors: blue, black, red;
 
+$colors: blue, black, red;
+
 @each $color in $colors {
   .color-bg-#{$color} {
     background-color: $color;
   }
 }
+
 .blue-bg {
   @extend .color-bg-blue;
 }
@@ -54,8 +57,18 @@ $colors: blue, black, red;
 
 .red-bg {
   @extend .color-bg-red;
+}
 
 
+$x: 1;
+
+@while $x < 6 {
+  .text-#{$x} {
+    font-size: 15px * $x;
+  }
+  
+  $x: $x + 1;
+}
 
 
 
