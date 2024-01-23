@@ -37,6 +37,13 @@ The definition starts with @mixin followed by a custom name. The parameters (the
     border: 1px solid #000;
   }
 }
+$colors: blue, black, red;
+
+@each $color in $colors {
+  .color-bg-#{$color} {
+    background-color: $color;
+  }
+}
 
 
 
