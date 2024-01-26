@@ -32,3 +32,10 @@ const JSX = (
     </div>
   );
 //   stateless functional element
+const MyComponent = () => {
+    return (
+      <div>
+        <p>This is some text inside a div element.</p>
+      </div>
+    );
+  };
