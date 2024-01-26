@@ -50,3 +50,25 @@ const MyComponent = () => {
       );
     }
   }
+  return (
+    <App>
+     <Navbar />
+     <Dashboard />
+     <Footer />
+    </App>
+   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
