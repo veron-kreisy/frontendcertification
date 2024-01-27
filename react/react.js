@@ -1,6 +1,8 @@
 // react is an Open Source view library 
 // It's a great tool to render the User Interface (UI) of modern web applications.
 
+const { Component } = require("react");
+
 // ReactDOM.render(JSX, document.getElementById('root'))
 
 
@@ -32,55 +34,48 @@ const JSX = (
     </div>
   );
 //   stateless functional element
-const MyComponent = () => {
+// creating a react component using javascript function
+// stateless functional Component should start with caps
+const DemoComponent = function() {
     return (
-      <div>
-        <p>This is some text inside a div element.</p>
-      </div>
+      <div className='customClass' />
     );
   };
-  class Kitten extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-  
-    render() {
-      return (
-        <h1>Hi</h1>
-      );
-    }
-  }
-  return (
-    <App>
-     <Navbar />
-     <Dashboard />
-     <Footer />
-    </App>
-   )
-   const ChildComponent = () => {
-    return (
-      <div>
-        <p>I am the child</p>
-      </div>
-    );
-  };
-  
-  class ParentComponent extends React.Component {
+//   ES6 class 
+// constructor The constructor is a special method used during the initialization of objects that are created with the class keyword.
+class MyComponent extends React.Component {
     constructor(props) {
       super(props);
     }
     render() {
-      return (
-        <div>
-          <h1>I am the parent</h1>
-          { /* Change code below this line */ }
-  
-  
-          { /* Change code above this line */ }
+     
+        return (
+          <div>
+        <h1>Hello React!</h1>
         </div>
-      );
+      ); 
     }
   };
+//  Create a Component with Composition
+
+return (
+ <App>
+  <Navbar />
+  <Dashboard />
+  <Footer />
+ </App>
+// ) inside the render method
+
+// using react to render nested component
+// component composition
+// When you work with React, it is important to start thinking about your user interface in terms of components
+
+
+
+
+
+
+
 
  
 
