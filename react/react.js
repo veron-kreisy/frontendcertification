@@ -122,31 +122,7 @@ class MyComponent extends React.Component {
 //  pass props to a stateless functional component
 const Welcome = (props) => <h1>Hello, {props.user}!</h1>
 // work your react here
-const CurrentDate = (props) => {
-    return (
-      <div>
-        { /* Change code below this line */ }
-        <p>The current date is: </p>
-        { /* Change code above this line */ }
-      </div>
-    );
-  };
-  
-  class Calendar extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-    render() {
-      return (
-        <div>
-          <h3>What date is it?</h3>
-          { /* Change code below this line */ }
-          <CurrentDate />
-          { /* Change code above this line */ }
-        </div>
-      );
-    }
-  };
+
 
 //   chatgpt example
 // CurrentDate component
@@ -176,7 +152,7 @@ const CurrentDate = (props) => {
   
   // Render Calendar component to the DOM
   ReactDOM.render(<Calendar />, document.getElementById('challenge-node'));
-  
+
 
 
 
