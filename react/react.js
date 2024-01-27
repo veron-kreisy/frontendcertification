@@ -147,6 +147,10 @@ const CurrentDate = (props) => {
   };
 
 
+//   passing arrays as props
+
+
+
 
 
 
