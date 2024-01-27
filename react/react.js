@@ -124,8 +124,6 @@ const Welcome = (props) => <h1>Hello, {props.user}!</h1>
 // work your react here
 
 
-//   chatgpt example
-// CurrentDate component
 const CurrentDate = (props) => {
     return (
       <div>
@@ -134,28 +132,19 @@ const CurrentDate = (props) => {
     );
   };
   
-  // Calendar component rendering CurrentDate with current date as a prop
   class Calendar extends React.Component {
     constructor(props) {
       super(props);
     }
-    
     render() {
       return (
         <div>
-          <h1>My Calendar</h1>
-          <CurrentDate date={new Date()} />
+          <h3>What date is it?</h3>
+          <CurrentDate date={Date()} />
         </div>
       );
     }
-  }
-  
-  // Render Calendar component to the DOM
-  ReactDOM.render(<Calendar />, document.getElementById('challenge-node'));
-
-
-
-
+  };
 
 
 
