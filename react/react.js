@@ -80,6 +80,7 @@ return (
 // ReactDOM.render(<ComponentToRender />, targetNode)
 
 // Render a Class Component to the DOM
+ 
 class TypesOfFood extends React.Component {
     constructor(props) {
       super(props);
@@ -100,12 +101,82 @@ class TypesOfFood extends React.Component {
   // Change code below this line
   ReactDOM.render(<TypesOfFood />, document.getElementById('challenge-node'));
 
+// react components from scratch 
+
+class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+     
+        return (
+          <div>
+        <h1>My First React Component!</h1>
+        </div>
+      ); 
+    }
+}
+    ReactDOM.render(<MyComponent />, document.getElementById('challenge-node'));
 
 
+//  pass props to a stateless functional component
+const Welcome = (props) => <h1>Hello, {props.user}!</h1>
+// work your react here
+const CurrentDate = (props) => {
+    return (
+      <div>
+        { /* Change code below this line */ }
+        <p>The current date is: </p>
+        { /* Change code above this line */ }
+      </div>
+    );
+  };
+  
+  class Calendar extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return (
+        <div>
+          <h3>What date is it?</h3>
+          { /* Change code below this line */ }
+          <CurrentDate />
+          { /* Change code above this line */ }
+        </div>
+      );
+    }
+  };
 
-
-
- 
+//   chatgpt example
+// CurrentDate component
+const CurrentDate = (props) => {
+    return (
+      <div>
+        <p>The current date is: {props.date}</p>
+      </div>
+    );
+  };
+  
+  // Calendar component rendering CurrentDate with current date as a prop
+  class Calendar extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    
+    render() {
+      return (
+        <div>
+          <h1>My Calendar</h1>
+          <CurrentDate date={new Date()} />
+        </div>
+      );
+    }
+  }
+  
+  // Render Calendar component to the DOM
+  ReactDOM.render(<Calendar />, document.getElementById('challenge-node'));
+  
 
 
 
