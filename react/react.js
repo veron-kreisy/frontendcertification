@@ -71,6 +71,34 @@ return (
 // When you work with React, it is important to start thinking about your user interface in terms of components
 
 
+// Render a Class Component to the DOM
+
+// none of the React code you write will render to the DOM without making a call to the ReactDOM API.
+// ReactDOM.render(componentToRender, targetNode)
+
+// jsx elements is the above one while react elements is below
+// ReactDOM.render(<ComponentToRender />, targetNode)
+
+// Render a Class Component to the DOM
+class TypesOfFood extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return (
+        <div>
+          <h1>Types of Food:</h1>
+          {/* Change code below this line */}
+  <Fruits />
+          <Vegetables />
+          {/* Change code above this line */}
+        </div>
+      );
+    }
+  };
+  
+  // Change code below this line
+  ReactDOM.render(<TypesOfFood />, document.getElementById('challenge-node'));
 
 
 
